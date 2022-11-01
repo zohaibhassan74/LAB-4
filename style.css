@@ -1,0 +1,69 @@
+#animation {
+  width: 200px;
+  height: 200px;
+  background: dodgerblue;
+  border-radius: 50px;
+  position: relative;
+  animation: mymove 2s;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(0deg);
+  }
+  to {
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+  }
+}
+
+#para {
+  border: 5px dodgerblue solid;
+  width: 50%;
+}
+#para:hover {
+  direction: rtl;
+  cursor: pointer;
+  transform: translateX(600px);
+}
+#image:hover {
+  filter: blur(5px);
+  cursor: pointer;
+}
+#image1:hover {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+#image2:hover {
+  cursor: pointer;
+  filter: opacity(0.5);
+}
+@media screen and (max-width: 300px) {
+  #media img {
+    width: 92%;
+  }
+}
+@media screen and (min-width: 301px) and (max-width: 799px) {
+  #media img {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 800px) {
+  #media img {
+    width: 22%;
+  }
+}
+#shadow {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.shadowimg{
+  width: 300px;
+  height: 300px;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+}
